@@ -5,48 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save The World</title>
-    <link rel="stylesheet" href="style.css">       
+    <link rel='stylesheet' href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">       
+    <link rel="stylesheet" href="css/pushbar.css">
 </head>
 <body>
     <header>
-        <section>
-
-        </section>
         <div class="container">
+            <div class="pushbar_buttom_nav_sup">
+                <nav class="pushbar_nav">
+                    <button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>    
+                </nav>
+            </div>
             <div class="img_dinamic">
                 <div class="main_background">
                     <img src="img/sky_background_FHD.png" alt="sky_background" id="sky_background">
                     <img src="img/mountains_background_FHD.png" alt="mountains_background" id="mountains_background">
                     <img src="img/trees_background_FHD.png" alt="trees_background"  id="trees_background">
-                    <h2 class="img_dinamic_text main_background_h2">SAVE THE WORLD</h2>
+                    <h2 class="img_dinamic_text main_background_h2">SAVE <br>THE <br>WORLD</h2>
                 </div>
-            </div>           
+            </div>              
         </div>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
-        <p>asdf</p>
+        
     </header>
-    <div class="scripts">
-        <script src="js/animations.js"></script>
-    </div>
+    <main>
+        
+        
+    </main>
+    <div data-pushbar-id="pushbar-menu" data-pushbar-direction="left">
+        <h1>Save The World</h1>
+
+    </div> 
+    <script src="js/animations.js"></script>
+    <script src="js/pushbar.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        });
+    </script>
+    
 </body>
 </html>
